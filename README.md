@@ -24,10 +24,10 @@ The models are evaluated using Accuracy, AUC, Precision, Recall, F1 Score and Ma
 ---
 
 ## 2. Dataset Description
+The dataset contains compressor operating and condition-monitoring parameters used to classify the condition of an exhaust valve.
 
-### Dataset Name
-
-Exhaust Valve Condition Classification Dataset
+### Original dataset file
+ `data.csv`  
 
 ### Problem Type
 
