@@ -100,14 +100,16 @@ __Additional Analysis of Logistic Regression__
 
 Because Logistic Regression achieved perfect performance, an additional
 experiment was performed without the `air\_flow` feature.
+
 Metric        Result
----
+
 Accuracy      0.7900
 AUC           0.8588
 Precision     0.4615
 Recall        0.3000
 F1            0.3636
 MCC           0.2527
+
 The substantial reduction in performance indicates that `air\_flow` is a
 highly influential predictor for distinguishing between Clean and Dirty
 exhaust valve conditions.
