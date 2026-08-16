@@ -96,75 +96,8 @@ Comparison Table
 | Gaussian Naive Bayes     |   0.8250 | 0.9223 |    0.5362 | 0.9250 | 0.6789 | 0.6101 |
 | Random Forest (Ensemble) |   0.9950 | 1.0000 |    1.0000 | 0.9750 | 0.9873 | 0.9843 |
 
+__Additional Analysis of Logistic Regression__
 
-
-
-
-
-
----
-ML Model       Accuracy        AUC   Precision     Recall         F1        MCC
-Name
----
-Logistic         1.0000     1.0000      1.0000     1.0000     1.0000     1.0000
-Regression
-Decision         0.9950     0.9969      0.9756     1.0000     0.9877     0.9846
-Tree
-KNN              0.9450     0.9645      1.0000     0.7250     0.8406     0.8236
-Gaussian         0.8250     0.9223      0.5362     0.9250     0.6789     0.6101
-Naive Bayes
-Random           0.9950     1.0000      1.0000     0.9750     0.9873     0.9843
-Forest  
-(Ensemble)
-Observations on Model Performance
-
-| ML Model Name            | Observation about model performance                                                                                                                                       |
-| :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Logistic Regression      | Achieved perfect performance on the test dataset. The unusually high performance was investigated because `air_flow` is strongly associated with exhaust valve condition. |
-| Decision Tree            | Achieved 99.5% Accuracy and 99.69% AUC. It correctly identified all 40 Dirty cases and 159 of the 160 Clean cases.                                                        |
-| KNN                      | Achieved 94.5% Accuracy and 96.45% AUC. Precision was 1.0000, but Recall was 0.7250.                                                                                      |
-| Gaussian Naive Bayes     | Produced the lowest overall performance. Recall was 0.9250, while Precision was 0.5362.                                                                                   |
-| Random Forest (Ensemble) | Achieved 99.5% Accuracy and AUC of 1.0000. It correctly classified 39 of 40 Dirty cases and all 160 Clean cases.                                                          |
-| **Overall Winner**       | **Logistic Regression** based on the six calculated evaluation metrics.                                                                                                   |
-
-
-
-
-
-
-
-
-
----
-ML Model Name                       Observation about model performance
----
-Logistic Regression                 Achieved perfect performance on the
-test dataset, with all six reported
-metrics equal to 1.0000. The
-unusually high performance was
-investigated because `air\_flow` is
-strongly associated with exhaust
-valve condition.
-Decision Tree                       Achieved 99.5% Accuracy and 99.69%
-AUC. It correctly identified all 40
-Dirty cases and 159 of the 160
-Clean cases, with only one Clean
-case classified as Dirty.
-KNN                                 Achieved 94.5% Accuracy and 96.45%
-AUC. Precision was 1.0000, but
-Recall was 0.7250, meaning that 11
-Dirty cases were classified as
-Clean.
-Gaussian Naive Bayes                Produced the lowest overall
-performance. Recall was 0.9250, but
-Precision was 0.5362, resulting in
-F1 of 0.6789 and MCC of 0.6101.
-Random Forest (Ensemble)            Achieved 99.5% Accuracy and AUC of
-1.0000. It correctly classified all
-160 Clean cases and 39 of the 40
-Dirty cases. Only one Dirty case
-was classified as Clean.
-Additional Analysis of Logistic Regression
 Because Logistic Regression achieved perfect performance, an additional
 experiment was performed without the `air\_flow` feature.
 Metric        Result
@@ -178,5 +111,17 @@ MCC           0.2527
 The substantial reduction in performance indicates that `air\_flow` is a
 highly influential predictor for distinguishing between Clean and Dirty
 exhaust valve conditions.
-Overall Winner for the Dataset
-Logistic Regression
+
+
+**Observations on Model Performance**
+
+| ML Model Name            | Observation about model performance                                                                                                                                       |
+| :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Logistic Regression      | Achieved perfect performance on the test dataset. The unusually high performance was investigated because `air_flow` is strongly associated with exhaust valve condition. |
+| Decision Tree            | Achieved 99.5% Accuracy and 99.69% AUC. It correctly identified all 40 Dirty cases and 159 of the 160 Clean cases.                                                        |
+| KNN                      | Achieved 94.5% Accuracy and 96.45% AUC. Precision was 1.0000, but Recall was 0.7250.                                                                                      |
+| Gaussian Naive Bayes     | Produced the lowest overall performance. Recall was 0.9250, while Precision was 0.5362.                                                                                   |
+| Random Forest (Ensemble) | Achieved 99.5% Accuracy and AUC of 1.0000. It correctly classified 39 of 40 Dirty cases and all 160 Clean cases.                                                          |
+| **Overall Winner**       | **Logistic Regression** based on the six calculated evaluation metrics.                                                                                                   |
+
+
