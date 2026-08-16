@@ -32,7 +32,7 @@ Dirty
 Input Features
 The following 20 compressor operating and condition-monitoring variables
 are used as predictors:
-``` text
+
 rpm
 motor\_power
 torque
@@ -53,7 +53,7 @@ gaccz
 haccx
 haccy
 haccz
-```
+
 Dataset Split
 Parameter        Value
 ---
