@@ -33,7 +33,8 @@ Input Features
 The following 20 compressor operating and condition-monitoring variables
 are used as predictors:
 
-rpm..
+rpm\
+
 motor\_power..
 torque..
 outlet\_pressure\_bar..
