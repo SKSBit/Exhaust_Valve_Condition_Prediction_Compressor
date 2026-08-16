@@ -87,6 +87,21 @@ Random Forest Classifier (Ensemble)
 
 
 Comparison Table
+
+| ML Model Name            | Accuracy |    AUC | Precision | Recall |     F1 |    MCC |
+| :----------------------- | -------: | -----: | --------: | -----: | -----: | -----: |
+| Logistic Regression      |   1.0000 | 1.0000 |    1.0000 | 1.0000 | 1.0000 | 1.0000 |
+| Decision Tree            |   0.9950 | 0.9969 |    0.9756 | 1.0000 | 0.9877 | 0.9846 |
+| KNN                      |   0.9450 | 0.9645 |    1.0000 | 0.7250 | 0.8406 | 0.8236 |
+| Gaussian Naive Bayes     |   0.8250 | 0.9223 |    0.5362 | 0.9250 | 0.6789 | 0.6101 |
+| Random Forest (Ensemble) |   0.9950 | 1.0000 |    1.0000 | 0.9750 | 0.9873 | 0.9843 |
+
+
+
+
+
+
+
 ---
 ML Model       Accuracy        AUC   Precision     Recall         F1        MCC
 Name
