@@ -81,6 +81,11 @@ Decision Tree Classifier
 K-Nearest Neighbors (KNN)
 Gaussian Naive Bayes
 Random Forest Classifier (Ensemble)
+
+
+
+
+
 Comparison Table
 ---
 ML Model       Accuracy        AUC   Precision     Recall         F1        MCC
@@ -97,6 +102,24 @@ Random           0.9950     1.0000      1.0000     0.9750     0.9873     0.9843
 Forest  
 (Ensemble)
 Observations on Model Performance
+
+| ML Model Name            | Observation about model performance                                                                                                                                       |
+| :----------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Logistic Regression      | Achieved perfect performance on the test dataset. The unusually high performance was investigated because `air_flow` is strongly associated with exhaust valve condition. |
+| Decision Tree            | Achieved 99.5% Accuracy and 99.69% AUC. It correctly identified all 40 Dirty cases and 159 of the 160 Clean cases.                                                        |
+| KNN                      | Achieved 94.5% Accuracy and 96.45% AUC. Precision was 1.0000, but Recall was 0.7250.                                                                                      |
+| Gaussian Naive Bayes     | Produced the lowest overall performance. Recall was 0.9250, while Precision was 0.5362.                                                                                   |
+| Random Forest (Ensemble) | Achieved 99.5% Accuracy and AUC of 1.0000. It correctly classified 39 of 40 Dirty cases and all 160 Clean cases.                                                          |
+| **Overall Winner**       | **Logistic Regression** based on the six calculated evaluation metrics.                                                                                                   |
+
+
+
+
+
+
+
+
+
 ---
 ML Model Name                       Observation about model performance
 ---
