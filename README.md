@@ -44,7 +44,7 @@ wpump\_outlet\_press
 water\_inlet\_temp  
 water\_outlet\_temp  
 wpump\_power  
-water\_flow..
+water\_flow  
 oilpump\_power  
 oil\_tank\_temp  
 gaccx  
