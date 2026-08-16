@@ -33,26 +33,26 @@ Input Features
 The following 20 compressor operating and condition-monitoring variables
 are used as predictors:
 
-rpm
-motor\_power
-torque
-outlet\_pressure\_bar
-air\_flow
-noise\_db
-outlet\_temp
-wpump\_outlet\_press
-water\_inlet\_temp
-water\_outlet\_temp
-wpump\_power
-water\_flow
-oilpump\_power
-oil\_tank\_temp
-gaccx
-gaccy
-gaccz
-haccx
-haccy
-haccz
+rpm..
+motor\_power..
+torque..
+outlet\_pressure\_bar..
+air\_flow..
+noise\_db..
+outlet\_temp..
+wpump\_outlet\_press..
+water\_inlet\_temp..
+water\_outlet\_temp..
+wpump\_power..
+water\_flow..
+oilpump\_power..
+oil\_tank\_temp..
+gaccx..
+gaccy..
+gaccz..
+haccx..
+haccy..
+haccz..
 
 Dataset Split
 Parameter        Value
