@@ -34,15 +34,13 @@ The following 20 compressor operating and condition-monitoring variables
 are used as predictors:
 
 rpm  
-
 motor\_power  
-
-torque..
-outlet\_pressure\_bar..
-air\_flow..
-noise\_db..
-outlet\_temp..
-wpump\_outlet\_press..
+torque  
+outlet\_pressure\_bar  
+air\_flow  
+noise\_db  
+outlet\_temp  
+wpump\_outlet\_press  
 water\_inlet\_temp..
 water\_outlet\_temp..
 wpump\_power..
