@@ -41,18 +41,18 @@ air\_flow
 noise\_db  
 outlet\_temp  
 wpump\_outlet\_press  
-water\_inlet\_temp..
-water\_outlet\_temp..
-wpump\_power..
+water\_inlet\_temp  
+water\_outlet\_temp  
+wpump\_power  
 water\_flow..
-oilpump\_power..
-oil\_tank\_temp..
-gaccx..
-gaccy..
-gaccz..
-haccx..
-haccy..
-haccz..
+oilpump\_power  
+oil\_tank\_temp  
+gaccx  
+gaccy  
+gaccz  
+haccx  
+haccy  
+haccz  
 
 Dataset Split
 Parameter        Value
